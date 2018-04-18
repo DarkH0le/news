@@ -4,7 +4,7 @@ class LeerNoticias{
 
 
     func getNoticias(termino:@escaping (_ datos:[String])->()){
-      let liga = "http://api.nytimes.com/svc/mostpopular/v2/mostviewed/arts/30.json?api-key=6a36377ba11a46309bb13a6fb6319083"
+      let liga = "http://api.nytimes.com/svc/mostpopular/v2/mostviewed/arts/30.json?api-key=3aaea54d2077487d89396b6042faf0eb"
       let url = URL(string: liga)!
         let ursession = URLSession.shared
         _ = ursession.dataTask(with: url) { (dato:Data?, respuesta:URLResponse?, error:Error?) in var titulos:[String] = []
